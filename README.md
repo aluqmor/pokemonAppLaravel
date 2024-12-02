@@ -1,39 +1,68 @@
-# Proyecto Laravel
+# Aplicación de Pokemon Laravel
 
-## Instrucciones de configuración
+Esta es una aplicación web desarrollada en Laravel que permite a los usuarios crear, ver y listar pokemon.
 
-1. **Renombrar el archivo `.env`**
-   - Copia el archivo `.env.example` y renómbralo como `.env`. Este archivo contendrá las configuraciones de entorno necesarias para el proyecto.
 
-2. **Configurar el archivo `.env`**
-   - En el archivo `.env`, necesitas configurar los siguientes valores:
-     - **APP_KEY**: Este se generará en el paso de comandos posteriores.
-     - **APP_ID**: Genera un ID único para tu aplicación.
-     - **BASE DE DATOS**: Configura los datos de acceso a tu base de datos:
-       - `DB_DATABASE`: El nombre de la base de datos es: pokemondb.
-       - `DB_USERNAME`: El usuario de la base de datos es: pokemon.
-       - `DB_PASSWORD`: La contraseña de dicho usuario es: pokemon.
+![1](images/1.jpg)
 
-3. **Instalar dependencias de Composer**
-   - Ejecuta el siguiente comando para descargar todas las dependencias del proyecto que están especificadas en el archivo `composer.json`:
-     ```bash
-     composer install
-     ```
 
-4. **Actualizar dependencias de Composer**
-   - Si es necesario actualizar las dependencias del proyecto a sus versiones más recientes, puedes usar:
-     ```bash
-     composer update
-     ```
 
-5. **Migraciones de base de datos**
-   - Ejecuta las migraciones para crear las tablas necesarias en la base de datos:
-     ```bash
-     php artisan migrate
-     ```
+![2](images/2.jpg)
 
-6. **Generar clave de aplicación**
-   - Para generar una clave de aplicación y almacenarla en el archivo `.env`, ejecuta:
-     ```bash
-     php artisan key:generate
-     ```
+
+
+![3.2](images/3.jpg)
+
+
+![4](images/4.jpg)
+
+
+
+## Instalación
+
+Sigue estos pasos para descargar y configurar el repositorio:
+
+1. Clona el repositorio:
+
+    ```sh
+    git clone https://github.com/aluqmor/pokemonApp.git
+    ```
+
+2. Navega al directorio del proyecto:
+
+    ```sh
+    cd tu-repositorio
+    ```
+
+3. Instala las dependencias de Composer:
+
+    ```sh
+    composer install
+    ```
+
+4. Copia el archivo database.sql y crea la base de datos junto con usuario y contraseña.
+
+5. Cambia el nombre de `.env.example` a `.env`.
+
+6. Configura tu base de datos en el archivo `.env`:
+
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=nombre_de_tu_base_de_datos
+    DB_USERNAME=tu_usuario
+    DB_PASSWORD=tu_contraseña
+    ```
+
+7. Genera la clave de la aplicación:
+
+    ```sh
+    php artisan key:generate
+    ```
+
+8. Ejecuta las migraciones para crear las tablas necesarias:
+
+    ```sh
+    php artisan migrate
+    ```
