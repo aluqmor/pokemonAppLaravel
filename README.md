@@ -25,7 +25,7 @@ Sigue estos pasos para descargar y configurar el repositorio:
 1. Clona el repositorio:
 
     ```sh
-    git clone https://github.com/aluqmor/pokemonApp.git
+    git clone https://github.com/aluqmor/pokemonAppLaravel.git
     ```
 
 2. Navega al directorio del proyecto:
