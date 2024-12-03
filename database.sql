@@ -13,11 +13,3 @@ create table pokemon (
   evolution int not null
 ) engine=innodb default charset=utf8 collate=utf8_unicode_ci;
 
-create user pokemon@localhost
-    identified by 'pokemon';
-
-grant all
-    on pokemondb.*
-    to pokemon@localhost;
-
-flush privileges;
